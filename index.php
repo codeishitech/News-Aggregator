@@ -1,20 +1,12 @@
-<?php
-session_start();
-if (!isset($_SESSION["user"])) {
-    header("Location: login.php");
-    exit;
-}
-?> 
-<!-- for secure logins-->
 <!DOCTYPE html>
 <html>
 <head>
-    <title>News aggregator</title>
+    <title>News Aggregator</title>
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-    <h1>News aggregator</h1>
+    <h1>News Aggregator</h1>
 
     <div class="categories">
         <button onclick="getNews('technology')">Technology</button>
