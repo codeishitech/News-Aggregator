@@ -1,0 +1,125 @@
+/* login.css – extends style.css for the login page */
+
+.login-wrapper {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dd8ff9;
+    padding: 40px 20px;
+}
+
+.login-card {
+    background: rgb(249, 226, 237);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 40px 36px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-card h2 {
+    font-size: 1.6rem;
+    color: #08173b;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 28px;
+}
+
+.error-msg {
+    background: #fee2e2;
+    color: #b91c1c;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 0.88rem;
+    margin-bottom: 18px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1e1e2f;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 7px;
+    font-size: 0.95rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: #1e1e2f;
+    background: #f8fafc;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #2563eb;
+    background: white;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 14px;
+    bottom: 11px;
+    font-size: 0.8rem;
+    color: #2563eb;
+    cursor: pointer;
+    font-weight: 600;
+    user-select: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 11px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 6px;
+}
+
+.login-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.footer-note {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-top: 22px;
+}
+
+.footer-note a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer-note a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 30px 22px;
+    }
+}
