@@ -20,9 +20,7 @@
             $username = trim($_POST["username"] ?? "");
             $password = $_POST["password"] ?? "";
             $users = [
-            "ishita" => "123",
-            "ishani" => "123",
-            "ishu" => "123"
+            "ishita" => "123"
                 ];
 
     if (array_key_exists($username, $users) && $users[$username] === $password) {
