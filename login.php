@@ -2,14 +2,13 @@
 <html>
 <head>
     <title>Login page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">News aggregator</div>
     </nav>
-
     <div class="login-wrapper">
         <div class="login-card">
             <h2>Welcome</h2>
@@ -22,7 +21,6 @@
             $users = [
             "ishita" => "123"
                 ];
-
     if (array_key_exists($username, $users) && $users[$username] === $password) {
         $_SESSION["user"] = $username;
         header("Location: index.php");
@@ -31,7 +29,6 @@
         $error = "Invalid username or password.";
     }
 }
-
             if ($error): ?>
                 <div class="error-msg"><?= htmlspecialchars($error) ?></div>
             <?php endif; ?>
@@ -47,10 +44,10 @@
                     <span class="toggle-password" onclick="togglePassword()">Show</span>
                 </div>
                 <button type="submit" class="login-btn">Sign In</button>
+                <input type="checkbox"> Remember Me
             </form>
         </div>
     </div>
-
     <script>
         function togglePassword() {
             const input = document.getElementById("password");
@@ -64,6 +61,5 @@
             }
         }
     </script>
-
 </body>
 </html>
